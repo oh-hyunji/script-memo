@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>simple memo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&display=swap" rel="stylesheet">
+    <!-- stylesheet --> 
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+     <!-- jquery-3.5.0.js -->
+     <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+     <!-- js -->
+     <script src="./js/index.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <div class="box">
+            <!-- header -->
+            <div class="header">
+                <h1><i class="fas fa-file-alt"></i> 심플 메모지</h1>
+                <h3>- 간단한 메모를 기록해보세요. (날짜 및 시간 자동 출력)</h3>
+            </div>
+            <!-- content -->
+            <div id="container">
+                <textarea class="memo_write" maxlength="250" placeholder="간단 메모 (ENTER)"></textarea>
+                <div class="cont_box">
+                    <p class="counter"><span>0</span> / 250</p>
+                    <button onclick="memoJs.ins();">메모입력 <i class="far fa-edit"></i></button>
+                </div>
+                <div id="content" class="memo_cont">
+                    <div id="memoNo" class="memo_section on"><p class="memo_text">예시 입니다. 글을 작성해 보세요! - 2020/00/00 00:00 &nbsp;&nbsp;&nbsp;<i class="fas fa-backspace icon_del"></i></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
